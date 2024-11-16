@@ -1,0 +1,286 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #1F242D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #2A3038;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    padding: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #66B2FF;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #66B2FF;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-pic {
+    width: 12vw;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #66B2FF;
+}
+
+.about-text {
+    max-width: 700px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #2A3038;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Enhanced Responsiveness */
+
+/* Medium-sized tablets and smaller */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .profile-pic {
+        width: 20vw;
+        max-width: 120px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 600px) {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .about-section {
+        padding: 0.5rem;
+    }
+
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-pic {
+        width: 25vw;
+        max-width: 100px;
+    }
+
+    .about-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    .about-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+    }
+
+    .profile-pic {
+        width: 30vw;
+        max-width: 80px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .header {
+        font-size: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    .about-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1F242D;
+    color: #fff;
+}
+
+.header {
+    background-color: #2A3038;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #66B2FF;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Hide navigation links on small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #2A3038;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

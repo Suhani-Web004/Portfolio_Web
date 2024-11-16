@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="/css/achivement.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href= "index.html" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="achivement.html">My Achievements</a></li>
+                <li><a href="Myprojects.html">My Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
+        </nav>
+    </header>
+    <main class="achievements-section">
+        <h1>My Achievements 🏆</h1>
+        <p>Here are some of my proudest achievements in my career journey.</p>
+        <div class="achievements-container">
+            <div class="achievement-card" onclick="showAchievementDetail('10th Marksheet')">
+                <i class="achievement-icon">🔟</i>
+                <h2>10th Marksheet</h2>
+                <a href= "/image/10th Mark sheet.pdf" class="logo">Click Here</a>
+                <p>Here is My 10th Marksheet.I completed my 10th class form ST.DC Convent School,Bhopal</p>
+            </div>
+            <div class="achievement-card" onclick="showAchievementDetail('12th Marksheet')">
+                <i class="achievement-icon">🔢</i>
+                <h2>12th Marksheet</h2>
+                <a href= "/image/12th marksheet.pdf" class="logo">Click Here</a>
+                <p>Here is My 10th Marksheet.I completed my 10th class form ST.DC Convent School,Bhopal</p>
+            </div>
+            <div class="achievement-card" onclick="showAchievementDetail('Udemy Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>Udemy certificate</h2>
+                <a href= "/image/certificate.jpeg" class="logo">Click Here</a>
+                <p>Here is my Udemy Certificate (DSA).</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('NPTEL Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>NPTEL Certificate</h2>
+                <a href= "/image/NPTEL certificate.pdf" class="logo">Click Here</a>
+                <p>Here is my NPTEL Certificate( The Joy Of Computing Python).</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('NIRMAAN Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>NIRMAAN Certificate</h2>
+                <a href= "/image/NIRMAAN certificate.pdf" class="logo">Click Here</a>
+                <p>Here is my NIRMAAN Certificate (Image Recognization Project).</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('Microsoft Ambassador Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>Microsoft Ambassador Certificate</h2>
+                <a href= "/image/Microsoft Ambassador Certificate.pdf" class="logo">Click Here</a>
+                <p>Here is my Microsoft Ambassador Certificate.</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('IOT Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>IOT Certificate</h2>
+                <a href= "/image/IOT certificate.pdf" class="logo">Click Here</a>
+                <p>Here is my IOT Certificate (Workshop Of 4 days).</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('SIH Certificate')">
+                <i class="achievement-icon">📜</i>
+                <h2>SIH Certificate</h2>
+                <a href= "/image/SIH certificate.pdf" class="logo">Click Here</a>
+                <p>Here is my SIH(Smart India Hackathon) Certificate (Women Safety Project).</p>
+            </div>
+        </div>
+        <div id="achievement-detail" class="achievement-detail">
+            <button class="close-btn" onclick="closeAchievementDetail()">X</button>
+            <h2 id="achievement-title">Achievement Title</h2>
+            <p id="achievement-description">Detailed description of the achievement will appear here.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 It's Me Suhani (Portfolio).</p>
+    </footer>
+    <script src="/js/script_A.js"></script>
+</body>
+</html>

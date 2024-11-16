@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="/css/Myproject.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href= "index.html" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="achivement.html">My Achievements</a></li>
+                <li><a href="Myprojects.html">My Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main class="achievements-section">
+        <h1>My Projects</h1>
+        <p>Here are some of my Projects Description.</p>
+        <div class="achievements-container">
+            
+            <div class="achievement-card" onclick="showAchievementDetail('Certified Expert1')">
+                <i class="achievement-icon">📜</i>
+                <h2>Online test System</h2>
+                <p>To upgrade yoursef</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('Certified Expert2')">
+                <i class="achievement-icon">💸</i>
+                <h2>Loan_Eligibility Prediction (ML Based Project)</h2>
+                <p>To check Whether you are eligibile for loan or not.</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('Certified Expert3')">
+                <i class="achievement-icon">👧🏻</i>
+                <h2>Women Safety</h2>
+                <p>By using Google API, This website is for the women Safety.</p>
+            </div>
+
+            <div class="achievement-card" onclick="showAchievementDetail('Certified Expert3')">
+                <i class="achievement-icon">👧🏻</i>
+                <h2>My Portfolio</h2>
+                <p>To know about myself.</p>
+            </div>
+
+        </div>
+        <div id="achievement-detail" class="achievement-detail">
+            <button class="close-btn" onclick="closeAchievementDetail()">X</button>
+            <h2 id="achievement-title">Achievement Title</h2>
+            <p id="achievement-description">Detailed description of the achievement will appear here.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 It's Me Suhani (Portfolio).</p>
+    </footer>
+    <script src="/js/Myproject.js"></script>
+</body>
+</html>
